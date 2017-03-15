@@ -60,7 +60,7 @@ module.exports = {
   actions: (data) => {
     const actions = [];
     if (reducerExists(data.component)) {
-      data.useSagas = sagasExists(data.component); // eslint-disable-line no-param-reassign
+      data.useSagas = sagasExists(data.component);
       actions.push({
         type: 'modify',
         path: '../../app/routes.js',
